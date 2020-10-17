@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+* {list-style:none;outline:none;}
+a{
+text-indent:1em;
+display:inline-block;
+font-size:22px;}
+a:nthchild(1){text-indent:0;}
+a:link.a:visited{text-decoration: none;}
+a:hover{
+    text-decoration:underline;
+    color:#f03
+}
+dl{display:none}
+dd{
+    line-height: 38px;
+}
+:target{display:block;}
+
+.scale img{
+background-size:contain|cover;
+width:100%;
+height:auto;
+}
+
+.nav{
+    text-align:center;
+    line-height: 60px;
+}

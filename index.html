@@ -1,0 +1,132 @@
+<!doctype html>
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Happy Birthday!</title>
+    <style type=text/css>
+        @font-face{
+            font-family: sleek;
+            src:url(/font/sleek.ttf)
+        }
+        strong{
+            font-family: sleek;
+            font-size: 20px;
+        }
+        </style>
+</head>
+<html>
+    <body> 
+        <h1 align="center" style="font-size:40px">祝小姚同学生日快乐</h1>
+        <div align="center">
+        <div class="nav" style="border-style:solid;
+        border-color:lightgrey;
+        background-color: lightgrey;border-radius:15px;
+        width:80%;height:60px;" align=center>
+        <nav>
+        <a href="#news1" style="font-size:20px;">主页</a>
+        <a href="#news2" style="font-size:20px;">统计</a>
+        <a href="#news3" style="font-size:20px;">空间</a>
+        </nav>
+        </div>
+        </div></br></br>
+
+
+
+
+        <div  align="center">
+        <div style="border-style:solid;
+        border-color:lightgrey;
+        background-color: lightgrey;border-radius:15px;
+        width:70%;height:900px;">
+        <dl id="news1" align=center>
+            <dt><img src="/picturebirth/01.jpg" align="middle"></dt>
+            <dd><br><br><br><br><br><br><br></dd>
+            <dd>❤️<strong>ʜᴀᴘᴘʏ ʙɪʀᴛʜᴅᴀʏ ᴛᴏ ʏᴏᴜ</strong>❤️</dd>
+            <dd><strong>(ෆ ͒•∘• ͒)◞~biu~</strong>❤️</dd>
+            <dd>💕<strong>祝小姚生日快乐</strong>💕</dd>
+            <dd><strong>老王爱你哦</strong></dd>
+            <dd><strong>------------------分割线------------------</strong></dd>
+        </dl>
+        </div>
+        </div>
+        <dl id="news2">
+            <div>
+                <p>老王已经认识小姚</p>
+                <DIV id="CountMsg1" class="HotDate"> 
+                    <span id="t_d1">00天</span> 
+                    <span id="t_h1">00时</span> 
+                    <span id="t_m1">00分</span> 
+                    <span id="t_s1">00秒</span> 
+                    </DIV> 
+                    <script type="text/javascript"> 
+                    function getRTime(){ 
+                    var EndTime= new Date('2019/7/13 10:00:00'); //截止时间 
+                    var NowTime = new Date(); 
+                    var t =EndTime.getTime() - NowTime.getTime(); 
+                    /*var d=Math.floor(t/1000/60/60/24); 
+                    t-=d*(1000*60*60*24); 
+                    var h=Math.floor(t/1000/60/60); 
+                    t-=h*60*60*1000; 
+                    var m=Math.floor(t/1000/60); 
+                    t-=m*60*1000; 
+                    var s=Math.floor(t/1000);*/
+                     
+                    var d=Math.floor(t/1000/60/60/24); 
+                    var h=Math.floor(t/1000/60/60%24); 
+                    var m=Math.floor(t/1000/60%60); 
+                    var s=Math.floor(t/1000%60); 
+                     
+                    document.getElementById("t_d1").innerHTML = -d + "天"; 
+                    document.getElementById("t_h1").innerHTML = -h + "时"; 
+                    document.getElementById("t_m1").innerHTML = -m + "分"; 
+                    document.getElementById("t_s1").innerHTML = -s + "秒"; 
+                    } 
+                    setInterval(getRTime,1000); 
+                    </script>
+                <p>距离高考还有</p>
+                <DIV id="CountMsg" class="HotDate"> 
+                    <span id="t_d">00天</span> 
+                    <span id="t_h">00时</span> 
+                    <span id="t_m">00分</span> 
+                    <span id="t_s">00秒</span> 
+                    </DIV> 
+                    <script type="text/javascript"> 
+                    function getRTime(){ 
+                    var EndTime= new Date('2022/6/7 10:00:00'); //截止时间 
+                    var NowTime = new Date(); 
+                    var t =EndTime.getTime() - NowTime.getTime(); 
+                    /*var d=Math.floor(t/1000/60/60/24); 
+                    t-=d*(1000*60*60*24); 
+                    var h=Math.floor(t/1000/60/60); 
+                    t-=h*60*60*1000; 
+                    var m=Math.floor(t/1000/60); 
+                    t-=m*60*1000; 
+                    var s=Math.floor(t/1000);*/
+                     
+                    var d=Math.floor(t/1000/60/60/24); 
+                    var h=Math.floor(t/1000/60/60%24); 
+                    var m=Math.floor(t/1000/60%60); 
+                    var s=Math.floor(t/1000%60); 
+                     
+                    document.getElementById("t_d").innerHTML = d + "天"; 
+                    document.getElementById("t_h").innerHTML = h + "时"; 
+                    document.getElementById("t_m").innerHTML = m + "分"; 
+                    document.getElementById("t_s").innerHTML = s + "秒"; 
+                    } 
+                    setInterval(getRTime,1000); 
+                    </script>
+            </div>
+            <div id="fasongyouxiang">
+
+            </div>
+        </dl>
+        <dl id="news3">
+
+        </dl>
+    </body>
+</html>
+
