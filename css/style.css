@@ -3,7 +3,7 @@
 
 * {list-style:none;outline:none;}
 a{
-    text-indent:1em
+text-indent:1em;
 display:inline-block;
 font-size:22px;}
 a:nthchild(1){text-indent:0;}
